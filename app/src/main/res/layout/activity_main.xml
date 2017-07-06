@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="20dp"
+    >
+
+    <com.why.best.loadview.LoadView
+        android:id="@+id/load_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击加载"
+        android:textSize="24sp"
+        app:backColor="#009966"
+        app:contentPaddingLR="20dp"
+        app:contentPaddingTB="20dp"
+        app:content_color="@android:color/white"
+        app:progressedWidth="4dp"/>
+
+    <Button
+        android:id="@+id/btn_test_successed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="加载成功"/>
+
+    <Button
+        android:id="@+id/btn_test_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载失败"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置按钮"/>
+
+</LinearLayout>
